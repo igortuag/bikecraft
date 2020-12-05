@@ -17,12 +17,37 @@ p {
   line-height: 20px;
   text-transform: uppercase;
   font-weight: bold;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
 }
 
 .btn:hover {
   border-color: #fff;
   color: #fff;
+}
+
+.btn.btn-preto:hover {
+  border-color: #000;
+  color: #000;
+}
+
+.subtitulo {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 30px;
+  letter-spacing: 0.1em;
+  color: #000;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.subtitulo:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #000;
+  margin: 8px auto;
 }
 
 /* Header */
@@ -32,6 +57,7 @@ p {
   width: 100%;
   background: #fec63e;
   padding: 15px 0;
+  z-index: 10;
 }
 
 .header_menu {
@@ -48,14 +74,14 @@ p {
   color: #000;
   font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
   font-size: 14px;
   line-height: 20px;
   padding: 10px 0;
 }
 
 .header_menu a:hover {
-  color: #FFF;
+  color: #fff;
 }
 
 /* Introdução */
@@ -71,7 +97,7 @@ p {
 
 .introducao h1 {
   font-size: 48px;
-  color: #FFF;
+  color: #fff;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -93,7 +119,7 @@ p {
   display: block;
   width: 60px;
   height: 3px;
-  background: #FFF;
+  background: #fff;
   margin: 14px auto 10px;
 }
 
@@ -101,5 +127,53 @@ p {
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
+}
+
+/* Produtos */
+
+.produtos {
+  padding: 60px 0;
+}
+
+.produtos_lista li {
+  background: #fec63e;
+  text-align: center;
+}
+
+.produtos_lista li h3 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 20px;
+}
+
+.produtos_lista li h3:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #000;
+  margin: 2px auto;
+}
+
+.produtos_lista li p {
+  padding: 20px;
+}
+
+.produtos_icone {
+  background: #000;
+  padding: 10px 20px 20px;
+}
+
+.call {
+  padding-top: 40px;
+  text-align: center;
+  clear: both;
+}
+
+.call p {
+  margin-bottom: 40px;
 }
