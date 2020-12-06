@@ -1,5 +1,13 @@
 /* Estilo para tablets */
 @media only screen and (min-width: 788px) and (max-width: 979px) {
+  /* Qualidade home */
+  .qualidade:after {
+    right: 66px;
+  }
+
+  .qualidade_lista li {
+    padding: 0 10px;
+  }
 }
 
 /* Estilo para smartphone */
