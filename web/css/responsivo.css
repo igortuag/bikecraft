@@ -4,7 +4,6 @@
 
 /* Estilo para smartphone */
 @media only screen and (max-width: 787px) {
-
   /* Header */
   .header {
     position: relative;
@@ -19,13 +18,13 @@
     text-align: center;
   }
 
-  .header_menu ul li a {
-    margin: 0;
+  .header_menu ul li {
+    margin: 5px;
   }
 
   .header_menu ul li a {
     border: 4px solid #000;
-    width: 140px;
+    width: 136px;
     display: block;
     float: left;
   }
@@ -35,4 +34,11 @@
   }
 
   /* Introdução */
+
+  .introducao {
+    margin-top: 0px;
+    padding-top: 20px;
+    background: url("../img/bg-mobile.jpg") no-repeat center;
+    background-size: cover;
+  }
 }
