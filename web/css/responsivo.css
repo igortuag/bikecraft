@@ -55,8 +55,21 @@
 
   .introducao {
     margin-top: 0px;
-    padding-top: 20px;
+    padding-top: 40px;
     background: url("../img/bg-mobile.jpg") no-repeat center;
     background-size: cover;
+  }
+
+  .introducao h1 {
+    font-size: 36px;
+  }
+
+  /* Call */
+  .call {
+    padding-top: 10px;
+  }
+
+  .qualidade:after {
+    display: none;
   }
 }
