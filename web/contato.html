@@ -1,15 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <meta charset="UTF-8" />
+    <title>Bikecraft - Contato</title>
+    <meta
+      name="description"
+      content="Compre a sua bicicleta personalizada na Bikcraft. Possuímos modelos Passeio, Retrô e Esporte."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Bikecraft - Bicicletas Personalizadas" />
+    <meta
+      property="og:description"
+      content="Compre a sua bicicleta personalizada na Bikcraft. Possuímos modelos Passeio, Retrô e Esporte."
+    />
+    <meta property="og:url" content="https://bikcraft.com/contato.html" />
+    <meta property="og:image" content="https://bikcraft.com/img/og-img.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="./favicon.ico" />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/grid.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/contato.css" />
     <link rel="stylesheet" href="./css/responsivo.css" />
-    <title>Bikecraft - Contato</title>
     <script>
       document.documentElement.classList.add("js");
     </script>
@@ -41,7 +54,7 @@
     <section class="contato container fadeInDown" data-anime="1200">
       <form id="form_contato" method="POST" action="./enviar.php" class="contato_form grid-8 formphp">
         <label for="nome">Nome</label>
-        <input type="text" id="nome"  name="nome" required />
+        <input type="text" id="nome" name="nome" required />
         <label for="email">E-mail</label>
         <input type="email" id="email" name="email" required />
         <label for="telefone">Telefone</label>
@@ -49,12 +62,10 @@
         <label for="mensagem">Mensagem</label>
 
         <label class="nao-aparece">Se você não é um robô, deixe em branco.</label>
-        <input type="text" class="nao-aparece" name="leaveblank">
+        <input type="text" class="nao-aparece" name="leaveblank" />
         <label class="nao-aparece">Se você não é um robô, não mude este campo.</label>
-        <input type="text" class="nao-aparece" name="dontchange" value="http://">
+        <input type="text" class="nao-aparece" name="dontchange" value="http://" />
 
-
-        
         <textarea id="mensagem" name="mensagem" required></textarea>
         <button id="enviar" name="enviar" type="submit" class="btn btn-preto">Enviar</button>
       </form>
@@ -88,7 +99,9 @@
     </section>
 
     <section class="container contato_mapa">
-      <a href="https://google.com" target="_blank" class="grid-16"><img src="./img/endereco-bikcraft.jpg" alt="Endereço da Bikcraft"></a>
+      <a href="https://google.com" target="_blank" class="grid-16"
+        ><img src="./img/endereco-bikcraft.jpg" alt="Endereço da Bikcraft"
+      /></a>
     </section>
 
     <section class="quebra">
@@ -106,8 +119,9 @@
           <div class="grid-8 footer_historia">
             <h3>Nossa Historia</h3>
             <p>
-              O verdadeiro segredo da felicidade está em ter um genuíno interesse por todos os detalhes da vida
-              cotidiana. Interesse por todos os detalhes da vida cotidiana.
+              Quando iniciamos a Bikcraft queríamos apenas um produto que adoraríamos utilizar. Somos apaixonados por
+              pedalar e também por fazer as coisas com as nossas próprias mãos. Assim surgiu um sonho na garagem da
+              nossa casa.
             </p>
           </div>
 
