@@ -2,13 +2,13 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <title>Bikecraft - Bicicletas Personalizadas</title>
+    <title><?php bloginfo('name'); ?></title>
     <meta
       name="description"
       content="Compre a sua bicicleta personalizada na Bikcraft. Possuímos modelos Passeio, Retrô e Esporte."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Bikecraft - Bicicletas Personalizadas" />
+    <meta property="og:title" content=<?php bloginfo('name'); ?> />
     <meta
       property="og:description"
       content="Compre a sua bicicleta personalizada na Bikcraft. Possuímos modelos Passeio, Retrô e Esporte."
