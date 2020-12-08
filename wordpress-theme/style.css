@@ -1,3 +1,20 @@
+/*
+Theme Name: Bikcraft
+Theme URI: https://igortuag.github.io/bikecraft
+Author: Igor Tuag
+Author URI: http://igortuag.com/
+Description: Tema criado para empresa ficticia Bikcraft
+Version: 1.0
+*/
+
+@import './css/reset.css';
+@import './css/normalize.css';
+@import './css/grid.css';
+@import './css/sobre.css';
+@import './css/produto.css';
+@import './css/portfolio.css';
+@import './css/contato.css';
+
 /* Estilos Gerais */
 body {
   font-family: Arial, Helvetica, sans-serif;
