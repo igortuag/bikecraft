@@ -1,5 +1,7 @@
-<?php get_header(); ?>
-
+<?php
+// Template Name: Sobre
+get_header();
+?>
     <section class="introducao-interna interna_sobre">
       <div class="container">
         <h1 data-anime="400" class="fadeInDown">Sobre</h1>

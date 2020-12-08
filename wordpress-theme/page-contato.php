@@ -1,5 +1,7 @@
-<?php get_header(); ?>
-
+<?php
+// Template Name: Contato
+get_header();
+?>
     <section class="introducao-interna interna_contato">
       <div class="container">
         <h1 data-anime="400" class="fadeInDown">Contato</h1>
