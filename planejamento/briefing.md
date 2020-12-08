@@ -3,7 +3,7 @@
 ## 1.	NECESSIDADES DO CLIENTE
 
 ### 1.1. Me conte sobre a sua empresa, o que ela faz, sua história e etc.
-A empresa é a Bikcraft é uma empresa que criar bicicletas personalizadas, é uma empresa nova, mas que quer utilizar tradição na montagem das bicicletas.
+A empresa é a Bikcraft é uma empresa que cria bicicletas personalizadas, é uma empresa nova, mas que quer utilizar tradição na montagem das bicicletas.
 
 ### 1.2. O que te levou a querer criar um site / um site novo?
 Ele precisa divulgar o produto para novos clientes.
