@@ -1,4 +1,7 @@
-<?php get_header(); ?>
+<?php
+// Template Name: Portfolio
+get_header();
+?>
 
     <section class="introducao-interna interna_porfolio">
       <div class="container">
