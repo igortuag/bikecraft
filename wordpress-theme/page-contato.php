@@ -2,6 +2,9 @@
 // Template Name: Contato
 get_header();
 ?>
+
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
     <section class="introducao-interna interna_contato">
       <div class="container">
         <h1 data-anime="400" class="fadeInDown">Contato</h1>
@@ -61,5 +64,6 @@ get_header();
         ><img src="./img/endereco-bikcraft.jpg" alt="Endereço da Bikcraft"
       /></a>
     </section>
+<?php endwhile; else: endif; ?>
 
 <?php get_footer(); ?>
