@@ -33,16 +33,7 @@ get_header();
 
     <section class="portfolio fadeInDown" data-anime="1600">
       <div class="container" data-slide="portfolio">
-        <ul class="portfolio_lista">
-          <li class="grid-8"><img src="./img/portfolio/retro.jpg" alt="Bicicleta retro" /></li>
-          <li class="grid-8"><img src="./img/portfolio/passeio.jpg" alt="Bicicleta passeio" /></li>
-          <li class="grid-16"><img src="./img/portfolio/esporte.jpg" alt="Bicicleta esporte" /></li>
-        </ul>
-        <ul class="portfolio_lista">
-          <li class="grid-8"><img src="./img/portfolio/passeio.jpg" alt="Bicicleta passeio" /></li>
-          <li class="grid-8"><img src="./img/portfolio/retro.jpg" alt="Bicicleta retro" /></li>
-          <li class="grid-16"><img src="./img/portfolio/esporte.jpg" alt="Bicicleta esporte" /></li>
-        </ul>
+        <?php include(TEMPLATEPATH . "/inc/clientes-portfolio.php"); ?>
       </div>
     </section>
 

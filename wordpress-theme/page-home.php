@@ -57,14 +57,10 @@ get_header();
 <section class="portfolio">
   <div class="container">
     <h2 class="subtitulo">Portfólio</h2>
-    <ul class="portfolio_lista">
-      <li class="grid-8"><img src="./img/portfolio/retro.jpg" alt="Bicicleta retro" /></li>
-      <li class="grid-8"><img src="./img/portfolio/passeio.jpg" alt="Bicicleta passeio" /></li>
-      <li class="grid-16"><img src="./img/portfolio/esporte.jpg" alt="Bicicleta esporte" /></li>
-    </ul>
+    <?php include(TEMPLATEPATH . "/inc/clientes-portfolio.php"); ?>
     <div class="call">
-      <p>Conheça mais o nosso portfólio</p>
-      <a href="portfolio.html" class="btn">Portfólio</a>
+      <p><?php the_field('chamada_portfolio'); ?></p>
+      <a href="/portfolio" class="btn">Portfólio</a>
     </div>
   </div>
 </section>
