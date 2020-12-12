@@ -5,13 +5,8 @@ get_header();
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-    <section class="introducao-interna interna_produtos">
-      <div class="container">
-        <h1 data-anime="400" class="fadeInDown">Produtos</h1>
-        <p data-anime="800" class="fadeInDown">Conheça todos nossos produtos</p>
-      </div>
-    </section>
-
+    <?php include(TEMPLATEPATH . "/inc/introducao.php"); ?>
+    
     <section class="container produtos_item fadeInDown" data-anime="1200">
       <div class="grid-11">
         <img src="./img/produtos/bikcraft-passeio-1.jpg" alt="Bikcraft Passeio" />

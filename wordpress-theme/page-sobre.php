@@ -5,12 +5,7 @@ get_header();
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-    <section class="introducao-interna interna_sobre">
-      <div class="container">
-        <h1 data-anime="400" class="fadeInDown">Sobre</h1>
-        <p data-anime="800" class="fadeInDown">Conheça mais sobre a bikcraft</p>
-      </div>
-    </section>
+    <?php include(TEMPLATEPATH . "/inc/introducao.php"); ?>
 
     <section class="missao_sobre container fadeInDown" data-anime="1200">
       <div class="grid-10">
