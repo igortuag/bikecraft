@@ -7,12 +7,16 @@ get_header();
 
 <section class="introducao">
   <div class="container">
-    <h1 data-anime="400" class="fadeInDown">Bicicletas Feitas a Mãos</h1>
+    <h1 data-anime="400" class="fadeInDown">
+      <?php the_field('titulo_introducao'); ?>
+    </h1>
     <blockquote data-anime="800" class="quote-externo fadeInDown">
-      <p>"Não tenha nada em sua casa que você não considere útil ou acredita ser bonito."</p>
-      <cite>WILLIAM MORRIS</cite>
+      <p>
+        <?php the_field('quote_introducao'); ?>
+      </p>
+      <cite><?php the_field('citacao_introducao'); ?></cite>
     </blockquote>
-    <a data-anime="1200" href="produtos.html" class="btn">Orçamento</a>
+    <a data-anime="1200" href="/produtos" class="btn">Orçamento</a>
   </div>
 </section>
 
@@ -45,8 +49,8 @@ get_header();
   </ul>
 
   <div class="call">
-    <p>Clique aqui e veja os detalhes dos produtos</p>
-    <a href="produtos.html" class="btn btn-preto">Produtos</a>
+    <p><?php the_field('chamada_produtos'); ?></p>
+    <a href="/produtos" class="btn btn-preto">Produtos</a>
   </div>
 </section>
 
