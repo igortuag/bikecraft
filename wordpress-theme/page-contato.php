@@ -5,12 +5,7 @@ get_header();
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-    <section class="introducao-interna interna_contato">
-      <div class="container">
-        <h1 data-anime="400" class="fadeInDown">Contato</h1>
-        <p data-anime="800" class="fadeInDown">Tire suas duvidas com a gente</p>
-      </div>
-    </section>
+    <?php include(TEMPLATEPATH . "/inc/introducao.php"); ?>
 
     <section class="contato container fadeInDown" data-anime="1200">
       <form id="form_contato" method="POST" action="./enviar.php" class="contato_form grid-8 formphp">
