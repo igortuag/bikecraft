@@ -7,13 +7,18 @@ Description: Tema criado para empresa ficticia Bikcraft
 Version: 1.0
 */
 
-@import './css/reset.css';
 @import './css/normalize.css';
+@import './css/reset.css';
 @import './css/grid.css';
 @import './css/sobre.css';
 @import './css/produtos.css';
 @import './css/portfolio.css';
 @import './css/contato.css';
+
+/* Estilo ADM Wordpress */
+.customize-support .header {
+  margin-top: 32px;
+}
 
 /* Estilos Gerais */
 body {
