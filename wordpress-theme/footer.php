@@ -30,23 +30,7 @@
 
           <div class="grid-4 footer_redes">
             <h3>Redes Sociais</h3>
-            <ul>
-              <li>
-                <a href="https://facebook.com/" target="_blank">
-                  <img src="./img/redes-sociais/facebook.svg" alt="facebook" />
-                </a>
-              </li>
-              <li>
-                <a href="https://instagram.com/" target="_blank">
-                  <img src="./img/redes-sociais/instagram.svg" alt="instagram" />
-                </a>
-              </li>
-              <li>
-                <a href="https://twitter.com/" target="_blank">
-                  <img src="./img/redes-sociais/twitter.svg" alt="twitter" />
-                </a>
-              </li>
-            </ul>
+            <?php include(TEMPLATEPATH . "/inc/redes-sociais.php"); ?>
           </div>
         </div>
       </div>
