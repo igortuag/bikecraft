@@ -40,8 +40,8 @@ get_header();
     </section>
 
     <section class="container contato_mapa">
-      <a href="https://google.com" target="_blank" class="grid-16"
-        ><img src="./img/endereco-bikcraft.jpg" alt="Endereço da Bikcraft"
+      <a href="<?php the_field('link_mapa'); ?>" target="_blank" class="grid-16"
+        ><img src="<?php the_field('imagem_mapa'); ?>" alt="<?php the_field('texto_mapa'); ?>"
       /></a>
     </section>
 <?php endwhile; else: endif; ?>
