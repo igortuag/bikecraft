@@ -1,11 +1,16 @@
 <?php $contato = get_page_by_title('contato'); ?>
 
+<style>
+  .quebra {
+    background: url("<?php the_field('background_footer', $contato); ?>") no-repeat center;
+    background-size: cover;
+  }
+</style>
+
 <div class="quebra">
   <blockquote class="quote-externo container">
-    <p>
-      "O verdadeiro segredo da felicidade está em ter um genuíno interesse por todos os detalhes da vida cotidiana."
-    </p>
-    <cite>WILLIAM MORRIS</cite>
+    <?php the_field('frase_footer', $contato); ?>
+    <cite><?php the_field('autor_frase_footer', $contato); ?></cite>
   </blockquote>
 </div>
 
