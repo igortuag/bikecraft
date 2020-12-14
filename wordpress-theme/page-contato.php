@@ -28,10 +28,10 @@ get_header();
 
       <div class="contato_dados grid-8">
         <h3>Dados</h3>
-        <span>+55 27 99999 9999</span>
-        <span>contato@bikcraft.com</span>
-        <span>Rua Ali Perto - Vila Velha</span>
-        <span>Espírito Santo - ES - Brasil</span>
+        <span><?php the_field('telefone'); ?></span>
+        <span><?php the_field('email'); ?></span>
+        <span><?php the_field('endereco1'); ?></span>
+        <span><?php the_field('endereco2'); ?></span>
 
         <h3>Redes Sociais</h3>
         <ul>
