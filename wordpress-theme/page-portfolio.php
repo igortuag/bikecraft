@@ -11,8 +11,8 @@ get_header();
     <section class="container fadeInDown" data-slide="quote" data-anime="1200">
     <?php if(have_rows('quote_portfolio')): while(have_rows('quote_portfolio')) : the_row(); ?>
       <blockquote class="quote_clientes">
-      <?php the_field('quote'); ?>
-        <cite><?php the_field('cite'); ?></cite>
+      <?php the_sub_field('quote'); ?>
+        <cite><?php the_sub_field('cite'); ?></cite>
       </blockquote>
     <?php endwhile; else : endif; ?>
     </section>
