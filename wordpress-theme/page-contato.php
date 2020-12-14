@@ -8,7 +8,7 @@ get_header();
     <?php include(TEMPLATEPATH . "/inc/introducao.php"); ?>
 
     <section class="contato container fadeInDown" data-anime="1200">
-      <form id="form_contato" method="POST" action="./enviar.php" class="contato_form grid-8 formphp">
+      <form id="form_contato" method="POST" action="<?php echo get_template_directory_uri(); ?>/enviar.php" class="contato_form grid-8 formphp">
         <label for="nome">Nome</label>
         <input type="text" id="nome" name="nome" required />
         <label for="email">E-mail</label>
