@@ -14,11 +14,7 @@
         <div class="container">
           <div class="grid-8 footer_historia">
             <h3>Nossa Historia</h3>
-            <p>
-              Quando iniciamos a Bikcraft queríamos apenas um produto que adoraríamos utilizar. Eramos apaixonados por
-              pedalar e também por fazer as coisas com as nossas próprias mãos. Assim surgiu um sonho na garagem da
-              nossa casa.
-            </p>
+            <?php the_field('resumo_historia', $contato); ?>
           </div>
 
           <div class="grid-4 footer_contato">
@@ -39,7 +35,7 @@
 
       <div class="copy">
         <div class="container">
-          <p class="grid-16">Bikcraft 2020 - Alguns direitos reservados.</p>
+          <p class="grid-16"><?php bloginfo('name'); ?> <?php echo date('Y'); ?> - Alguns direitos reservados.</p>
         </div>
       </div>
     </footer>
