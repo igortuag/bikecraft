@@ -1,3 +1,5 @@
+<?php $contato = get_page_by_title('contato'); ?>
+
 <div class="quebra">
   <blockquote class="quote-externo container">
     <p>
@@ -22,9 +24,9 @@
           <div class="grid-4 footer_contato">
             <h3>Contato</h3>
             <ul>
-              <li>- 27 99999-9999</li>
-              <li>- contato@bikcraft.com</li>
-              <li>- Vila Velha - ES</li>
+              <li>- <?php the_field('telefone', $contato); ?></li>
+              <li>- <?php the_field('email', $contato); ?></li>
+              <li>- <?php the_field('endereco2', $contato); ?></li>
             </ul>
           </div>
 
