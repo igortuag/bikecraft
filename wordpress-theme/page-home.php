@@ -62,6 +62,7 @@ get_header();
         </a>
       </li>
     <?php endwhile; else: endif; ?>
+    <?php wp_reset_query(); wp_reset_postdata(); ?>
   </ul>
 
   <div class="call">
@@ -77,8 +78,10 @@ get_header();
   </div>
 </section>
 
-<?php include(TEMPLATEPATH . "/inc/qualidade.php"); ?>
 
 <?php endwhile; else: endif; ?>
+<?php wp_reset_query(); wp_reset_postdata(); ?>
+
+<?php include(TEMPLATEPATH . "/inc/qualidade.php"); ?>
 
 <?php get_footer(); ?>
