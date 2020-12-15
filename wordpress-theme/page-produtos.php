@@ -6,6 +6,17 @@ get_header();
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
     <?php include(TEMPLATEPATH . "/inc/introducao.php"); ?>
+
+    <?php
+      $args = array (
+        'post_type' => 'produtos'
+      );
+      $the_query = new WP_Query ( $args );
+    ?>
+
+    <?php if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+      <h1><?php the_title(); ?></h1>
+    <?php endwhile; else: endif; ?>
     
     <section class="container produtos_item fadeInDown" data-anime="1200">
       <div class="grid-11">
