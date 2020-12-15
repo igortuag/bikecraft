@@ -15,6 +15,12 @@ remove_action('admin_print_styles', 'print_emoji_styles');
 // Habilitar Menus
 add_theme_support('menus');
 
+// Registrar Menu
+function register_my_menu() {
+  register_nav_menu('menu-principal',__( 'Menu Principal' ));
+}
+add_action( 'init', 'register_my_menu' );
+
 // Custom Images Sizes
 function my_custom_sizes() {
 	add_image_size('large', 1400, 380, true);
