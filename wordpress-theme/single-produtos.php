@@ -1,3 +1,5 @@
+<?php $contato = get_page_by_title('contato'); ?>
+
 <?php
 // Template Name: Single Produtos
 get_header();
@@ -44,8 +46,8 @@ get_header();
 
         <div class="orcamento_dados grid-8">
           <h3>Dados</h3>
-          <span>+55 27 99999 9999</span>
-          <span>orcamento@bikcraft.com</span>
+          <span><?php the_field('telefone', $contato); ?></span>
+          <span><?php the_field('email', $contato); ?></span>
 
           <h3>Monte a sua Bikcraft</h3>
           <p>Escolha as especificações</p>
