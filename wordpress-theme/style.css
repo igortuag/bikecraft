@@ -133,6 +133,10 @@ img {
 .header_menu ul li a.menu_ativo {
   color: #fff;
 }
+
+.header_menu ul li.current_page_item a {
+  color: #fff;
+}
  
 /* Introdução */
 .introducao {
@@ -544,8 +548,9 @@ img {
     border-color: #fff;
   }
 
-  .header_menu ul li a.menu_ativo {
+  .header_menu ul li.current_page_item a {
     border-color: #fff;
+    color: #fff;
   }
 
   /* Introdução */
