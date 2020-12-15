@@ -42,29 +42,26 @@ get_header();
 <section class="container produtos fadeInDown" data-anime="1600">
   <h2 class="subtitulo">Produtos</h2>
   <ul class="produtos_lista">
-    <li class="grid-1-3">
-      <div class="produtos_icone">
-        <img src="./img/produtos/passeio.svg" alt="Bikcraft Passeio" />
-      </div>
-      <h3>Passeio</h3>
-      <p>Muito melhor do que passear pela orla a vidros fechados.</p>
-    </li>
-
-    <li class="grid-1-3">
-      <div class="produtos_icone">
-        <img src="./img/produtos/esporte.svg" alt="Bikcraft Esporte" />
-      </div>
-      <h3>Esporte</h3>
-      <p>Mais rápida do que Forrest Gump, ninguém vai pegar você.</p>
-    </li>
-
-    <li class="grid-1-3">
-      <div class="produtos_icone">
-        <img src="./img/produtos/retro.svg" alt="Bikcraft Retro" />
-      </div>
-      <h3>Retro</h3>
-      <p>O passado volta para lembrarmos o que devemos fazer no futuro.</p>
-    </li>
+    <?php
+      $args = array (
+        'post_type' => 'produtos'
+      );
+      $the_query = new WP_Query ( $args );
+    ?> 
+    <?php if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+      <li class="grid-1-3">
+        <a href="<?php the_permalink(); ?>">
+          <div class="produtos_icone">
+            <img src="<?php the_field('icone_produto'); ?>" alt="Bikcraft <?php the_title(); ?>" />
+          </div>
+          <h3><?php the_title(); ?></h3>
+          <p>
+          
+            <?php the_field('resumo_produto'); ?>
+          </p>
+        </a>
+      </li>
+    <?php endwhile; else: endif; ?>
   </ul>
 
   <div class="call">
