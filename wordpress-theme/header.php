@@ -2,21 +2,21 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <title><?php bloginfo('name'); ?></title>
+    <title><?php bloginfo('name'); ?> | <?php wp_title(); ?> <?php the_field('title_seo'); ?></title>
     <meta
       name="description"
-      content="Compre a sua bicicleta personalizada na Bikcraft. Possuímos modelos Passeio, Retrô e Esporte."
+      content="<?php bloginfo('name'); ?> | <?php wp_title(); ?> <?php the_field('description_seo'); ?>"
     />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content=<?php bloginfo('name'); ?> />
+    <meta property="og:title" content=<?php bloginfo('name'); ?> | <?php wp_title(); ?> <?php the_field('title_seo'); ?> />
     <meta
       property="og:description"
-      content="Compre a sua bicicleta personalizada na Bikcraft. Possuímos modelos Passeio, Retrô e Esporte."
+      content="<?php bloginfo('url'); ?> | <?php wp_title(); ?> <?php the_field('description_seo'); ?>"
     />
-    <meta property="og:url" content="https://bikcraft.com" />
-    <meta property="og:image" content="https://bikcraft.com/img/og-img.png" />
+    <meta property="og:url" content="<?php bloginfo('name'); ?>" />
+    <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/img/og-img.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./favicon.ico" />
+    <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico" />
 
     <script>
       document.documentElement.classList.add("js");
