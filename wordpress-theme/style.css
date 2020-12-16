@@ -299,7 +299,7 @@ img {
   width: 634px;
   height: 83px;
   display: block;
-  background: url("../img/linhas.svg") no-repeat center;
+  background: url("./img/linhas.svg") no-repeat center;
   position: absolute;
   top: 209px;
   right: 162px;
