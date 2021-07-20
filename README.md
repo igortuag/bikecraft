@@ -57,13 +57,10 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para
 
 ```bash
 # Clone este repositório
-$ git clone https://github.com/igortuag/happy
+$ git clone https://github.com/igortuag/bikecraft
 
 # Acesse a pasta do projeto no seu terminal/cmd
-$ cd happy
-
-# Vá para a pasta da aplicação Front End
-$ cd web
+$ cd bikecraft 
 
 # Abra o arquivo index.html
 .\index.html
